@@ -10,21 +10,21 @@ body {
 
 .navbar-nav {
   display: flex;
-  justify-content: space-between; /* Spread items evenly */
-  width: 100%; /* Full width */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  justify-content: space-between; 
+  width: 100%; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .navbar-nav .nav-item {
-  flex: 1; /* Make each item take equal space */
-  text-align: center; /* Center text within each item */
+  flex: 1; 
+  text-align: center; 
 }
 
 .navbar-nav .nav-link {
   color: #f2e5bf;
   font-size: 20px;
-  padding: 10px 0; /* Adjust padding for spacing */
+  padding: 10px 0; 
   text-align: center;
   text-decoration: none;
 }
