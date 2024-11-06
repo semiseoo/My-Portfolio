@@ -1,12 +1,12 @@
 /* imports needed modules*/
-var express = require('express');
+const express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var layout = require('express-ejs-layouts');
 
-var app = express();
+const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine' , 'ejs');
@@ -25,7 +25,7 @@ app.use(function(req, res, next){
     res.status(404).send("Can't find the page you're looking for, Sorry!");
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
