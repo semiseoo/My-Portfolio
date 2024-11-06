@@ -25,10 +25,10 @@ app.use(function(req, res, next){
     res.status(404).send("Can't find the page you're looking for, Sorry!");
 });
 
-const port = process.env.PORT || 10000;
+const port = process.env.PORT;
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 })
 
 module.exports = app;
